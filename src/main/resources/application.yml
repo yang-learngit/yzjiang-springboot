@@ -1,0 +1,30 @@
+kaptcha:
+ border:
+   color: 105,179,90
+ textproducer:
+   # 文本字符
+   char:
+     # 字符集合
+     string: 123456789
+     # 字符长度
+     length: 4
+   font:
+     size: 40
+ background:
+   # 背景颜色渐变
+   clear:
+     form: orange
+     to: white
+ session:
+   key: KAPTCHA_SESSION_KEY
+   date: KAPTCHA_SESSION_DATE
+spring:
+ datasource:
+   url: jdbc:mysql://localhost:3306/mysystem
+   username: root
+   password: root
+   driver-class-name: com.mysql.jdbc.Driver
+ mvc:
+  view:
+   prefix: /WEB-INF/views/
+   suffix: .jsp
